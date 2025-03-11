@@ -1,4 +1,4 @@
-from src.ShopPrices import calculate_earings
+from src.ShopPrices import calculate_earings, calculate_expenses
 
 
 class MainClass:
@@ -7,3 +7,4 @@ class MainClass:
 
 if __name__ == "__main__":
      calculate_earings()
+     calculate_expenses()

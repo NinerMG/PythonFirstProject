@@ -1,3 +1,5 @@
+total_income = 0
+
 def print_prices():
     print('''Prices:
 Bubblegum: $2
@@ -17,6 +19,7 @@ def calculate_earings():
         "Pancake" : 80
     }
 
+    global total_income
     total_income = sum(earings.values())
 
     print("Earned amount:")
@@ -24,3 +27,13 @@ def calculate_earings():
         print(f"{item} : ${income}")
     print()
     print(f"Income: ${total_income:.1f}")
+
+def calculate_expenses():
+    staff_expenses = int(input("Staff expenses:"))
+    other_expenses = int(input("Other expenses"))
+
+    expenses = staff_expenses + other_expenses
+
+    global total_income
+    total_income -= expenses
+    print(f"Net income: ${total_income:.1f}")
