@@ -1,4 +1,4 @@
-from src.ShopPrices import printPrices
+from src.ShopPrices import calculate_earings
 
 
 class MainClass:
@@ -6,4 +6,4 @@ class MainClass:
         print("Hello world")
 
 if __name__ == "__main__":
-    printPrices()
+     calculate_earings()
